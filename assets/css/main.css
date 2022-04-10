@@ -328,6 +328,19 @@ nav .HomeLinkNavy a:hover {
         display: none;
 
     }
+    .stats-box {
+        position: relative;
+        display: flex;
+        top: 80%;
+        justify-content: center;
+        width: 300px;
+        height: 140px;
+        float: left;
+        border-radius: 5px;
+        margin: 6px;
+        background-color: #22b4b7;
+        transition: all .8s ease-in-out;
+    }
 
     .menu-botDiscord {
         display: block;
