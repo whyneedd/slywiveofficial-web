@@ -194,36 +194,25 @@ nav .HomeLinkNavy a:hover {
 }
 
 .stats-box {
-    position: absolute;
+    position: relative;
     display: flex;
     top: 120%;
-    left: 284px;
-    width: 230px;
-    height: 180px;
-    background: #2895A9;
-    border-radius: 8px;
     justify-content: center;
-    cursor: pointer;
+    width: calc(280px - 30px);
+    height: calc(180px - 30px);
+    float: left;
+    border-radius: 5px;
+    margin: 15px;background-color: #22b4b7;
 
 }
+
 
 .stats-box:hover {
     background: #333232;
     border: 2px solid #2895A9;
     transition: all .8s ease-in-out;
 }
-.stats-box:nth-child(2):hover {
-    background: #333232;
-    border: 2px solid #2895A9;
-    transition: all .8s ease-in-out;
 
-}
-.stats-box:nth-child(3):hover {
-    background: #333232;
-    border: 2px solid #2895A9;
-    transition: all .8s ease-in-out;
-
-}
 .stats-box h3 {
     position: absolute;
     display: block;
@@ -236,28 +225,6 @@ nav .HomeLinkNavy a:hover {
     display: block;
     top: 30%;
     font-size: 45px;
-}
-.stats-box:nth-child(2) {
-    position: absolute;
-    display: flex;
-    top: 120%;
-    left: 570px;
-    width: 230px;
-    height: 180px;
-    background: #2895A9;
-    justify-content: center;
-
-}
-.stats-box:nth-child(3) {
-    position: absolute;
-    display: flex;
-    top: 120%;
-    left: 840px;
-    width: 230px;
-    height: 180px;
-    background: #2895A9;
-    justify-content: center;
-
 }
 
 .menu-Stats h2 {
@@ -336,14 +303,12 @@ nav .HomeLinkNavy a:hover {
     display: none;
 }
 
-@media screen and (max-width: 921px) {
+@media screen and (max-width: 1115px) {
     nav .HomeLinkNavy {
         display: none;
 
     }
-    .menu-Stats {
-        display: none;
-    }
+ 
 
     .menu-botDiscord {
         display: block;
