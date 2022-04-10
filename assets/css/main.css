@@ -288,3 +288,12 @@ nav .HomeLinkNavy a:hover {
     border: none;
     margin: 0px;
 }
+
+@media screen and (max-width: 921px) {
+    nav .HomeLinkNavy {
+        display: none;
+
+    }
+    
+    
+}
