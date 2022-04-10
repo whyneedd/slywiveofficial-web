@@ -44,3 +44,15 @@ humbger_menu.onclick = function() {
   humbger.classList.toggle("is-open");
 
 }
+
+var loadingApp;
+
+function LoadingTimes() {
+  loadingApp = setTimeout(ShowPages, 5000);
+
+}
+
+function ShowPages() {
+  document.getElementById("loading1").style.display = "none";
+  document.getElementById("pages").style.display = "block";
+}
