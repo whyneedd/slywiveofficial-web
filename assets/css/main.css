@@ -199,7 +199,7 @@ nav .HomeLinkNavy a:hover {
     top: 120%;
     justify-content: center;
     width: 280px;
-    height: 180px;
+    height: 160px;
     float: left;
     border-radius: 5px;
     margin: 9px;
@@ -307,7 +307,7 @@ nav .HomeLinkNavy a:hover {
     display: none;
 }
 
-@media screen and (max-width: 1115px) {
+@media screen and (max-width: 921px) {
     nav .HomeLinkNavy {
         display: none;
 
