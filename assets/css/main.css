@@ -2,23 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 
-* , ::before, ::after{
+* , ::before, ::after {
     margin: 0;
     padding: 0;
+    font-family: "Poppins";
     box-sizing: border-box;
     text-decoration: none;
-    transition: .4s;
 
 
 }
 body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     min-height: 100vh;
     font-family: "Poppins";
     scroll-behavior: smooth;
+    box-sizing: border-box;
     background: #333;
+    transition: .4s;
+
 }
 ::selection {
     background-color: transparent;
@@ -334,7 +336,7 @@ nav .HomeLinkNavy a:hover {
     display: none;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 921px) {
     nav .HomeLinkNavy {
         display: none;
 
