@@ -298,6 +298,11 @@ nav .HomeLinkNavy a:hover {
 .humbger {
     display: none;
 }
+
+.humbger-menu {
+    display: none;
+}
+
 @media screen and (max-width: 921px) {
     nav .HomeLinkNavy {
         display: none;
