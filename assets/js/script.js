@@ -1,5 +1,7 @@
 const nav = document.querySelector(".navbar");
 const scrollUp_btn = document.querySelector(".scrollTop");
+const humbger = document.querySelector(".humbger");
+const humbger_menu = document.querySelector(".humbger-menu");
 
 window.onscroll = function() {
   var ScrollY = window.scrollY;
@@ -30,3 +32,15 @@ var typed = new Typed('.writing', {
   backSpeed: 80,
   loop: true,
 })
+
+humbger.onclick = function() {
+  humbger.classList.toggle("is-open");
+  humbger_menu.classList.toggle("is-open");
+
+}
+
+humbger_menu.onclick = function() {
+  humbger_menu.classList.toggle("is-open");
+  humbger.classList.toggle("is-open");
+
+}
