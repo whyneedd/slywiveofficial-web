@@ -145,13 +145,21 @@ nav .HomeLinkNavy a:hover {
 
 .menu-botDiscord-btn {
     position: absolute;
-    display: inline-block;
+    display: flex;
     margin-top: 190px;
     color: #fff;
     background: #2895A9;
     border-radius: 5px;
     padding: .6rem 4em;
+    transition: all .3s ease-in;
 
+
+}
+
+.menu-botDiscord-btn:hover {
+    background-color: #121212;
+    transform: scale(1.1);
+    transition: all .3s ease-in;
 
 }
 
@@ -215,7 +223,7 @@ nav .HomeLinkNavy a:hover {
     display: flex;
     top: 100vh;
     width: 100%;
-    height: 200px;
+    height: 500px;
     left: 50%;
     flex-wrap: wrap;
     transform: translate(-50%);
@@ -227,7 +235,7 @@ nav .HomeLinkNavy a:hover {
 .stats-box {
     position: relative;
     display: flex;
-    top: 120%;
+    top: 60%;
     justify-content: center;
     width: 280px;
     height: 160px;
@@ -242,8 +250,9 @@ nav .HomeLinkNavy a:hover {
 
 
 .stats-box:hover {
-    background: #333232;
-    transform: scale(1.3);
+    background: #121212;
+    transform: scale(1.2);
+    z-index: 1;
     border: 2px solid #2895A9;
     transition: all .8s ease-in-out;
 }
@@ -339,6 +348,15 @@ nav .HomeLinkNavy a:hover {
 }
 
 @media screen and (max-width: 400px) {
+    .menu-Stats {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 500px;
+        top: 80%;
+    }
     .stats-box {
         position: relative;
         display: flex;
@@ -359,6 +377,7 @@ nav .HomeLinkNavy a:hover {
         display: none;
 
     }
+    
     .stats-box {
         position: relative;
         display: flex;
@@ -483,11 +502,12 @@ nav .HomeLinkNavy a:hover {
     .aboutus {
         position: absolute;
         display: flex;
-        margin-top: 260%;
+        margin-top: 400%;
         width: 100%;
         height: 500px;
         overflow-x: auto;
         justify-content: center;
+        align-items: center;
         
     }
     .aboutus p {
