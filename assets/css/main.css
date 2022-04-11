@@ -217,6 +217,7 @@ nav .HomeLinkNavy a:hover {
     width: 100%;
     height: 200px;
     left: 50%;
+    flex-wrap: wrap;
     transform: translate(-50%);
     justify-content: center;
     color: #fff;
