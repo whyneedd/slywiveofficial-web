@@ -467,9 +467,11 @@ nav .HomeLinkNavy a:hover {
     }
 
     .humbger-menu-content ul li a {
-        position: relative;
+        display: flex;
+        justify-content: center;
         top: 37px;
         left: 8px;
+        font-size: 34px;
         color: #fff;
     }
     .humbger-menu.is-open {
