@@ -471,7 +471,8 @@ nav .HomeLinkNavy a:hover {
         justify-content: center;
         top: 37px;
         left: 8px;
-        font-size: 34px;
+        font-size: 32px;
+        margin-bottom: 23px;
         color: #fff;
     }
     .humbger-menu.is-open {
