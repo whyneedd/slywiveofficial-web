@@ -48,7 +48,7 @@ humbger_menu.onclick = function() {
 var loadingApp;
 
 function LoadingTimes() {
-  loadingApp = setTimeout(ShowPages, 5000);
+  loadingApp = setTimeout(ShowPages, 10);
 
 }
 
