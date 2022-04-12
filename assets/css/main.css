@@ -338,11 +338,19 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     width: 340px;
-    height: 200px;
+    height: 100px;
     margin: 8px;
+    border-radius: 5px;
     background-color: #121212;
+    transition: .8s;
 
 }
+
+.features .row .card:hover {
+    transform: scale(1.08);
+    background: #22b4b7;
+    transition: .8s;
+} 
 
 .features .row .card .title {
     position: relative;
@@ -365,7 +373,7 @@ nav ul li a:hover {
     width: 0%;
     height: 2px;
     transition: .8s;
-    background-color: #2895A9;
+    background-color: #fff;
 }
 .features .row .card .content p:hover::after {
     width: 100%;
