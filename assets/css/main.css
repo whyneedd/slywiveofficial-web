@@ -435,7 +435,7 @@ nav ul li a:hover {
 /* Section About Us */
 
 .banner-about-area {
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding-top: 100px;
     height: 100vh auto;
@@ -452,7 +452,7 @@ nav ul li a:hover {
 }
 
 .banner-about-area .content {
-    width: 80%;
+    width: 80% auto;
     margin: auto;
     padding: 80px;
     height: 100vh auto;
@@ -460,7 +460,16 @@ nav ul li a:hover {
     /* padding-bottom: 100px; */
 
 }
-@media screen and (max-width: 700px) {}
+@media screen and (max-width: 500px) {
+    .banner-about-area .content {
+        width: 100%;
+        margin: auto;
+        height: 100vh auto;
+        color: #fff;
+        /* padding-bottom: 100px; */
+    
+    }
+}
 
 @media screen and (max-width: 921px) {
     nav .menu {
