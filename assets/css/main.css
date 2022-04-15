@@ -197,15 +197,16 @@ nav ul li a:hover {
     background: #2895A9;
     border-radius: 5px;
     padding: .6rem 4em;
-    transition: all .3s ease-in;
+    transition: .4s;
 
 
 }
 
 .menu-botDiscord-btn:hover {
-    background-color: #c62222;
-    transform: scale(1.1);
-    transition: all .3s ease-in;
+    background-color: transparent;
+    border: 1px solid #fff;
+    transform: scale(1.08);
+    transition: .4s;
 
 }
 
