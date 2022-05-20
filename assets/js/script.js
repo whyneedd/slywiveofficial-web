@@ -8,9 +8,11 @@ window.onscroll = function() {
 
   if (ScrollY >= 100) {
     nav.classList.add("sticky")
-    scrollUp_btn.classList.add("active-scroll")
+    scrollUp_btn.classList.add("active-scroll");
+    humbger.classList.add("sticky");
   } else {
     nav.classList.remove("sticky")
+    humbger.classList.remove("sticky");
     scrollUp_btn.classList.remove("active-scroll")
 
   }
