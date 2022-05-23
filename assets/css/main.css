@@ -193,14 +193,14 @@ nav ul li a:hover {
     
 }
 
-.menu-botDiscord .text-2::after {
+/* .menu-botDiscord .text-2::after {
     content: "";
     display: block;
     width: 18%;
     height: 4px;
     background-color: #22b4b7;
 
-}
+} */
 
 .menuBot-card {
     position: absolute;
