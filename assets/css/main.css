@@ -12,22 +12,26 @@
 
 }
 
-body,
 html {
+    scroll-behavior: smooth;
+
+}
+
+body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    font-family: "Poppins";
-    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     background: #333;
-    transition: .4s;
+    transition: .3s;
 
 }
 
 ::selection {
     background-color: transparent;
     color: hsl(181, 69%, 43%);
+    
 }
 
 ::-webkit-scrollbar {
@@ -38,6 +42,7 @@ html {
 ::-webkit-scrollbar-thumb {
     border-radius: 5rem;
     background-color: #2895A9;
+
 }
 
 #loading1 {
@@ -65,6 +70,7 @@ html {
 
 #pages {
     display: none;
+
 }
 
 .header {
@@ -80,21 +86,24 @@ html {
 nav {
     margin: 0;
     padding: 0;
-    height: 6rem;
     min-width: 100%;
     position: fixed;
     display: flex;
     z-index: 9999;
-    justify-content: space-around;
+    padding: 30px 100px;
+    justify-content: space-between;
     align-items: center;
-    transition: .8s ease-out;
+    transition: .3s;
+
 }
 
-nav .HomeLinkLogo a {
+nav .HomeLinkLogo .nav-links_logo {
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     position: relative;
-    font-weight: bold;
+    font-weight: 900;
+    letter-spacing: 2px;
+
 }
 
 nav .menu {
@@ -105,7 +114,7 @@ nav .menu {
 
 nav ul li {
     list-style: none;
-    margin: 6px;
+    margin: .6rem;
 
 }
 
@@ -114,6 +123,7 @@ nav ul li a {
     font-weight: 500;
     font-family: "Poppins", sans-serif;
     color: #ffff;
+    transition: .3s;
 
 }
 
@@ -123,7 +133,7 @@ nav ul li a::after {
     height: 2px;
     display: block;
     margin: auto;
-    transition: .8s;
+    transition: .3s;
     background-color: #fff;
 
 }
@@ -134,22 +144,25 @@ nav ul li a:hover::after {
 
 nav ul li a:hover {
     color: #2895A9;
+    letter-spacing: .8px;
+
 }
 
 .navbar.sticky {
     background-color: #2895A9;
     color: #fff;
     height: 4rem;
-    transition: .8s ease-out;
 
 }
 
 .navbar.sticky a {
     color: #fff;
+
 }
 
 .navbar.sticky ul li a:hover {
     color: #333232;
+
 }
 
 .background {
@@ -183,9 +196,10 @@ nav ul li a:hover {
 .menu-botDiscord .text-2::after {
     content: "";
     display: block;
-    width: 25%;
+    width: 18%;
     height: 4px;
     background-color: #22b4b7;
+
 }
 
 .menuBot-card {
@@ -194,6 +208,7 @@ nav ul li a:hover {
     padding: 30px;
     width: 100%;
     height: 100%;
+
 }
 
 .menu-botDiscord-info {
@@ -204,6 +219,7 @@ nav ul li a:hover {
     color: #fff;
     width: 800px;
     height: 400px;
+
 }
 
 .menu-botDiscord-btn {
@@ -214,22 +230,20 @@ nav ul li a:hover {
     background: #2895A9;
     border-radius: 5px;
     padding: .6rem 4em;
-    transition: .4s;
+    transition: .3s;
 
 
 }
 
 .menu-botDiscord-btn:hover {
-    background-color: transparent;
-    border: 1px solid #fff;
-    transform: scale(1.08);
-    transition: .4s;
+    transform: translateY(-0.6rem);
 
 }
 
 
 .menu-botDiscord-info span {
     color: #2895A9;
+
 }
 
 .scrollTop.active-scroll {
@@ -263,6 +277,7 @@ nav ul li a:hover {
 .scrollTop i {
     font-size: 35px;
     padding: 8px;
+
 }
 
 .redirectBoxing {
@@ -281,6 +296,7 @@ nav ul li a:hover {
     position: absolute;
     top: 60%;
     border-radius: 8rem;
+
 }
 
 
@@ -296,6 +312,7 @@ nav ul li a:hover {
     height: 120px;
     animation: loading1 1s infinite linear;
     transition: 0.8s ease;
+
 }
 
 @keyframes loading1 {
@@ -332,17 +349,21 @@ nav ul li a:hover {
 .footer h3 {
     font-family: "Poppins", sans-serif;
     font-size: 14px;
+
 }
 
 .humbger {
     display: none;
+
 }
 
 .humbger-menu {
     display: none;
+
 }
 
 /* Section features */
+
 .features {
     width: 80%;
     height: 100vh auto;
@@ -350,16 +371,15 @@ nav ul li a:hover {
     text-align: center;
     padding-top: 100px;
     color: #fff;
-    /* padding-bottom: 100px; */
 
 }
 
 .features .row {
     position: relative;
     display: flex;
+    align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-
 
 }
 
@@ -368,18 +388,18 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     width: 340px;
-    height: 16rem;
+    height: 14rem;
     margin: 8px;
     border-radius: 5px;
     background-color: #121212;
-    transition: .8s;
+    transition: .3s;
 
 }
 
 .features .row .card:hover {
-    transform: scale(1.08);
+    transform: scale(1.03);
     background: #22b4b7;
-    transition: .8s;
+
 }
 
 .features .row .card .title {
@@ -387,6 +407,7 @@ nav ul li a:hover {
     display: flex;
     top: 20px;
     color: #fff;
+
 }
 
 .features .row .card .content {
@@ -406,10 +427,12 @@ nav ul li a:hover {
     height: 2px;
     transition: .8s;
     background-color: #fff;
+
 }
 
 .features .row .card .content p:hover::after {
     width: 100%;
+
 }
 
 /* Section statistique */
@@ -421,6 +444,7 @@ nav ul li a:hover {
     height: 100vh auto;
     text-align: center;
     color: #fff;
+
 }
 
 .statistique .row {
@@ -428,7 +452,6 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
 
 }
 
@@ -441,15 +464,14 @@ nav ul li a:hover {
     margin: 8px;
     background-color: #121212;
     border-radius: 5px;
-    transition: .8s;
-
+    transition: .3s;
 
 }
 
 .statistique .row .stats-box:hover {
-    transform: scale(1.08);
+    transform: scale(1.03);
     background: #22b4b7;
-    transition: .8s;
+
 }
 
 .statistique .row .stats-box .title {
@@ -464,8 +486,8 @@ nav ul li a:hover {
     position: absolute;
     display: flex;
     top: 12px;
-    color: rgb(255, 255, 0);
-    animation: Flash 2s infinite linear;
+    color: rgb(255, 255, 255);
+
 }
 
 .statistique .row .stats-box .icons-box {
@@ -475,16 +497,6 @@ nav ul li a:hover {
     font-size: 40px;
     color: #fff;
 
-}
-
-@keyframes Flash {
-    0%{
-        opacity: 0;
-
-    }
-    100%{
-        opacity: 1;
-    }
 }
 
 /* Section About Us */
@@ -512,7 +524,6 @@ nav ul li a:hover {
     padding: 80px;
     height: 100vh auto;
     color: #fff;
-    /* padding-bottom: 100px; */
 
 }
 
@@ -520,9 +531,8 @@ nav ul li a:hover {
     .banner-about-area .content {
         width: 100%;
         margin: auto;
-        height: 100vh auto;
+        height: 100vh;
         color: #fff;
-        /* padding-bottom: 100px; */
 
     }
 }
@@ -535,9 +545,10 @@ nav ul li a:hover {
 
     .menu-botDiscord {
         display: block;
-        width: 300px;
+        width: 200px;
         height: 200px;
         left: 18px;
+
     }
 
     .menu-botDiscord .menu-botDiscord-info {
@@ -564,6 +575,7 @@ nav ul li a:hover {
 
     .footer h3 {
         font-size: 12px;
+
     }
 
     nav .humbger {
@@ -608,16 +620,19 @@ nav ul li a:hover {
 
     nav .humbger.is-open::before {
         transform: rotateZ(-45deg) translate(-8px, 6px);
+
     }
 
     nav .humbger.is-open::after {
         transform: rotateZ(45deg) translate(-9px, -8px);
+
     }
 
     nav .humbger.is-open .bir {
         transform: translateX(-100px);
         opacity: 0;
         pointer-events: auto;
+
     }
 
     .humbger-menu {
@@ -635,6 +650,7 @@ nav ul li a:hover {
         background-color: #333232;
         color: #fff;
         transition: all 1s ease-out;
+
     }
 
     .humbger-menu-content {
@@ -662,6 +678,7 @@ nav ul li a:hover {
         font-size: 1.5rem;
         margin-bottom: 23px;
         color: #fff;
+
     }
 
     .humbger-menu-content .menu2 li a:hover {
@@ -671,11 +688,14 @@ nav ul li a:hover {
 
     .menu-botDiscord .menu-botDiscord-info {
         font-size: 14px;
+
     }
+
     .humbger-menu.is-open {
         position: absolute;
         display: block;
         left: 0;
+
     }
 
 }
